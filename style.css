@@ -1,0 +1,260 @@
+* {
+  font-family: Lato;
+}
+
+[type="checkbox"].reset-checkbox,
+[type="checkbox"].reset-checkbox:checked,
+[type="checkbox"].reset-checkbox:not(checked) {
+  opacity: 1;
+  position: relative;
+  pointer-events: initial;
+}
+
+[type="checkbox"].reset-checkbox+span::before,
+[type="checkbox"].reset-checkbox+span::after,
+[type="checkbox"].reset-checkbox:checked+span::before,
+[type="checkbox"].reset-checkbox:checked+span::after {
+  display: none;
+}
+
+[type="checkbox"].reset-checkbox+span:not(.lever) {
+  padding-left: 10px;
+}
+
+body {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.charPic {
+  background-size: 100% 100%;
+  height: 100px;
+}
+
+.glass {
+  background-color: RGBA(255, 255, 255, .5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.vision {
+  background-size: 20px 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.HydroVision {
+  background-image: url(img/Hydro.png);
+}
+
+.ElectroVision {
+  background-image: url(img/Electro.png);
+}
+
+.PyroVision {
+  background-image: url(img/Pyro.png);
+}
+
+.CryoVision {
+  background-image: url(img/Cryo.png);
+}
+
+.AnemoVision {
+  background-image: url(img/Anemo.png);
+}
+
+.GeoVision {
+  background-image: url(img/Geo.png);
+}
+
+.DendroVision {
+  background-image: url(img/Dendro.png);
+}
+
+.dePad {
+  padding: 0 !important;
+}
+
+.Star5 {
+  background-color: RGBA(200, 124, 36, .2);
+  transition: .2s;
+}
+
+.Star4 {
+  background-color: RGBA(148, 112, 187, .2);
+  transition: .2s;
+}
+
+.Star5:hover,
+.Star5.hover {
+  background-color: RGB(200, 124, 36);
+  box-shadow: 0 0 10px RGBA(0, 0, 0, .5);
+  background-image: linear-gradient(RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0));
+  background-size: 100% 100%;
+}
+
+.Star4:hover, {
+  background-color: RGB(148, 112, 187);
+  box-shadow: 0 0 10px RGBA(0, 0, 0, .5);
+  background-image: linear-gradient(RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0));
+}
+
+.Star4:hover,
+.Star4.hover {
+  background-color: RGB(148, 112, 187);
+  box-shadow: 0 0 10px RGBA(0, 0, 0, .5);
+  background-image: linear-gradient(RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0));
+  background-size: 100% 100%;
+}
+
+/*
+
+.Star5:hover,
+.characters.Star5 input:checked+img {
+  background-color: RGB(200, 124, 36);
+  box-shadow: 0 0 10px RGBA(0, 0, 0, .5);
+  background-image: linear-gradient(RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0));
+}
+
+*/
+/*
+
+.Star4:hover,
+.characters.Star4 input:checked+img {
+  background-color: RGB(148, 112, 187);
+  box-shadow: 0 0 10px RGBA(0, 0, 0, .5);
+  background-image: linear-gradient(RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0));
+} */
+#goToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#goToTop:hover {
+  box-shadow: 0 10px 10px RGBA(0, 0, 0, .3);
+}
+
+#GenshinCard {
+  width: 670px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card_headerImage img {
+  width: 100px;
+}
+
+.card_title {
+  font-size: 30px;
+}
+
+.fieldLabel {
+  width: 110px;
+  display: inline-block;
+  text-align: right;
+}
+
+#charList .characters img {
+  width: 99px;
+  border-radius: 5px;
+}
+
+.characters {
+  border-bottom: 2px solid RGBA(0, 0, 0, .5);
+  border-top: 2px solid RGBA(255, 255, 255, .5);
+  border-radius: 5px;
+  margin: 2px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.characters input.filter {
+  background-color: orange;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  position: absolute !important;
+  opacity: 0 !important;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+/*.characters input+img {
+  filter: grayscale(80%);
+  transition: .2s;
+}
+
+.characters input:checked+img {
+  filter: grayscale(0%);
+}*/
+#GenshinCard,
+.cardInfo {
+  display: inline-block;
+}
+
+.cardInfo {
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  vertical-align: top;
+  width: calc(100% - 680px);
+}
+
+.detail_section {
+  border-bottom: 1px solid RGBA(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.customTextField {
+  border: 0;
+  border-bottom: 3px solid #44a3cf;
+  border-radius: 5px;
+  padding: 5px 3px;
+  outline: 0;
+}
+
+.button {
+  border: 0;
+  border-bottom: 2px solid RGBA(0, 0, 0, .5);
+  border-top: 2px solid RGBA(255, 255, 255, .5);
+  background-color: #44a3cf;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+.button:hover {
+  background-color: #6ac7f2;
+}
+
+#cardExportImage {
+  text-align: center;
+}
+
+.cardBG {
+  background-image: url('img/cardBG_3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fieldSet {
+  margin-bottom: 2px;
+}
