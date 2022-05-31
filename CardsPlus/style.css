@@ -237,14 +237,6 @@ body {
   margin-left: -50px;
 }
 
-/*.characters input+img {
-  filter: grayscale(80%);
-  transition: .2s;
-}
-
-.characters input:checked+img {
-  filter: grayscale(0%);
-}*/
 #GenshinCard,
 .cardInfo {
   display: inline-block;
