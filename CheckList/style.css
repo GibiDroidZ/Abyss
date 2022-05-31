@@ -382,6 +382,30 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
+@media only screen and (max-width: 500px) {
+  #charList [class*="col"] {
+    margin: 2px;
+    float: initial;
+    display: inline-block;
+  }
+
+  #charList [class*="col"],
+  .vision,
+  .characters input.filter,
+  .charPic {
+    height: 50px;
+    width: 50px;
+  }
+
+  .characters input.filter {
+    margin-left: -25px;
+  }
+
+  .vision {
+    background-size: 10px 10px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .showInCustom-700 {
     display: inline-block;
