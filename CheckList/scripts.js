@@ -75,7 +75,7 @@ for (var i = 0; i < charList.length; i++) {
 
   }
 
-  $('#charList').append('<div class="col l2 dePad"><div class="characters Star' + charList[i].rarity + '"><div class="' + charList[i].vision + 'Vision vision"></div><input type="checkbox" id="' + charList[i].label + '" name="' + charList[i].label + '" value="' + charList[i].label + '" class="reset-checkbox filter"><div class="charPic charPic-' + charList[i].label + '"></div></div></div>');
+  $('#charList').append('<div class="col l2 m3 s3 dePad"><div class="characters Star' + charList[i].rarity + '"><div class="' + charList[i].vision + 'Vision vision"></div><input type="checkbox" id="' + charList[i].label + '" name="' + charList[i].label + '" value="' + charList[i].label + '" class="reset-checkbox filter"><div class="charPic charPic-' + charList[i].label + '"></div></div></div>');
 }
 
 var newBG;
