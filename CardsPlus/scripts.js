@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, {});
   });
-
+/*
 $(function() {
   $("#generateImage").click(function() {
 
@@ -39,7 +39,7 @@ var container = document.body;
                 link.click();
               });
   });
-});
+});*/
 
 function downloadimage() {
   //var container = document.getElementById("image-wrap"); //specific element on page
